@@ -1,0 +1,37 @@
+:root {
+    --site-color-01: #1013d6;
+    --site-color-01-hover: #1a253a;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: Roboto;
+}
+
+/* Képek faszásan jelennek meg: (no flicker)*/
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(img/facebook-color.png) url(img/instagram-color.png);
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+}
+
+a {
+    cursor: pointer;
+}

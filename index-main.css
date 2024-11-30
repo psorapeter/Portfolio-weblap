@@ -1,0 +1,52 @@
+main {
+    height: 100vh;
+    background-image: url(img/police.png), url(img/orszagut.jpg);
+    background-size: 50vh, cover;
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+main .main-intro {
+    padding: 30px;
+}
+
+main .main-quotes {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main a {
+    margin-top: 20px;
+    font-size: 12px;
+    display: block;
+    color: white;
+    background-color: var(--site-color-01);
+    padding: 5px 10px;
+    width: fit-content;
+    transition: all ease-in-out 300ms;
+}
+
+main a:hover {
+    box-shadow: 0px 0px 30px white;
+}
+
+main .main-quotes p {
+    border-left: 2px solid var(--site-color-01);
+    padding-left: 15px;
+    margin-left: 50px;
+}
+
+.pici {
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+main .main-quotes p:nth-child(2) {
+    margin-left: 100px;
+}

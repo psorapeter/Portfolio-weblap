@@ -1,0 +1,70 @@
+.index-category {
+    padding: 30px 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.index-category-box {
+    width: 160px;
+    height: 160px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px var(--site-color-01-hover);
+    position: relative;
+}
+
+.index-category-box:nth-child(2) {
+    background-image: url(img/kat/uniform.jpg);
+}
+
+.index-category-box:nth-child(3) {
+    background-image: url(img/kat/hb.jpg);
+}
+
+.index-category-box:nth-child(4) {
+    background-image: url(img/kat/felj.jpg);
+}
+
+.index-category-box:nth-child(5) {
+    background-image: url(img/kat/zsb.jpg);
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    transition: all ease-in-out 500ms;
+}
+
+.index-category-box:hover .dark-overlay {
+    opacity: 0;
+}
+
+.index-category-box h3 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -2px 2px 4px black;
+    z-index: 100;
+}
+
+.index-category p {
+    color: black;
+    text-align: center;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 24px;
+}

@@ -1,0 +1,134 @@
+<!doctype html>
+<html style="font-size: 12px;font-family: Roboto, Arial, sans-serif;" lang="hu-HU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Policia</title>
+    <link rel="icon" type="image/x-icon" href="img/Hungary_Police.svg">
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index-header.css">
+    <link rel="stylesheet" href="index-main.css">
+    <link rel="stylesheet" href="index-category.css">
+    <link rel="stylesheet" href="index-about.css">
+    <link rel="stylesheet" href="resp.css">
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="header-main-logo">
+            <img src="img/szolgved.png" alt="police logo">
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="index.html">FÓOLDAL</a></li>
+                    <li><a href="#kat">KATEGÓRIÁK</a></li>
+                    <li><a href="#rolam">RÓLAM</a></li>
+                    <li><a href="#">KAPCSOLAT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-main-sm">
+            <a href="https://www.facebook.com/@PoliceHungaryOfficial" target="_blank">
+                <div class="header-main-sm-fb"></div>
+            </a>
+            <a href="https://www.instagram.com/police_hu/" target="_blank">
+                <div class="header-main-sm-in"></div>
+            </a>
+        </div>
+    </header>
+    <!-- main rész -->
+    <main>
+        <div class="main-intro">
+            <h1>Egy helyszínelő<br>kalandjai</h1>
+            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Corporis sed nemo minima <br> expedita
+                possimus
+                repellat <br> aliquam perspiciatis ut <br> sapiente distinctio!</p>
+            <a href="https://www.police.hu" target="_blank">Munkám</a>
+        </div>
+        <div class="main-quotes">
+            <p>Lorem ipsum dolor sit amet elit. <br> Corporis sed nemo minima<br>expedita possimus
+                repellat perspiciatis ut <br> sapiente distinctio! <br><br> <span class="pici">- Dr. Pintér Sándor -
+                    örökös
+                    belügyminiszter</span>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. <br> Ex ut autem.<br><br><span
+                    class="pici">- Psóra
+                    Péter - volt r. főtörzsőrmester</span>
+            </p>
+        </div>
+    </main>
+    <!-- category rész -->
+    <section id="kat" class="index-category">
+        <p>Kategóriák</p>
+        <a href="https://www.police.hu/hu/a-rendorsegrol/testulet/rendeszeti-szakterulet/igazgatasrendeszet"
+            target="_blank" class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>Figyelmeztetés</h3>
+        </a>
+        <a href="https://www.police.hu/hu/a-rendorsegrol/testulet/rendeszeti-szakterulet/kozlekedesrendeszet"
+            target="_blank" class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>Helyszíni bírság</h3>
+        </a>
+        <a href="https://www.police.hu/hu/ugyintezes/beadvanytetel" target="_blank" class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>Feljelentés</h3>
+        </a>
+        <a href="https://24.hu/belfold/2021/03/09/letoltendot-kapott-tizennyolc-lebenyi-rendor-korrupcio-miatt/"
+            target="_blank" class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>Hivatali vesztegetés</h3>
+        </a>
+    </section>
+    <!-- about rész -->
+    <section id="rolam" class="index-about">
+        <div class="index-about-image">
+            <a href="img/bh.jpg" target="_blank"><img src="img/profil.jpg" alt="rendőr"></a>
+        </div>
+        <div class="index-about-text">
+            <h2>Rólam</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sit animi cumque illum
+                voluptatum
+                aut, accusantium beatae quis officiis itaque saepe, velit dolore. Perferendis amet odit atque modi
+                nemo
+                tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio debitis nam, ipsam quidem, non iure
+                quasi
+                neque soluta quos recusandae fuga aut. Velit, recusandae quos.</p>
+            <a href="https://www.facebook.com/psorapeti" target="_blank">Ismerj meg</a>
+        </div>
+        <div class="index-about-skill">
+            <p>Közrendvédelem</p>
+            <div class="index-about-skill-bar">
+                <div class="index-about-skill-bar-fill kozrend"></div>
+            </div>
+            <p>Közlekedésrendészet</p>
+            <div class="index-about-skill-bar">
+                <div class="index-about-skill-bar-fill kozl"></div>
+            </div>
+            <p>Bűnügy</p>
+            <div class="index-about-skill-bar">
+                <div class="index-about-skill-bar-fill bcs"></div>
+            </div>
+            <p>Igazgatásrendészet</p>
+            <div class="index-about-skill-bar">
+                <div class="index-about-skill-bar-fill igrend"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.header-main-nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

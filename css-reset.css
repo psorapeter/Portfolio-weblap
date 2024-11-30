@@ -1,0 +1,32 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Ez a sor a Roboto betűtípust importálja a Google Fonts-ból. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Ez a rész eltávolítja az összes alapértelmezett stílust (User-Agent-Stylesheet) az elemekről, kivéve a display tulajdonságot. */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Ez a beállítás biztosítja, hogy a padding és a border is beleszámítson az elemek teljes szélességébe és magasságába. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Ez megakadályozza, hogy a képek túlnyúljanak a konténerükön. */
+img {
+    max-width: 100%;
+}
+
+/* Ez eltávolítja a táblázat cellái közötti alapértelmezett térközt. */
+table {
+    border-collapse: collapse;
+}
+
+/* Ez a beállítás visszaállítja a white-space tulajdonságot a textarea elemeknél Safari böngészőben. */
+textarea {
+    white-space: revert;
+}
