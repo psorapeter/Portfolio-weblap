@@ -20,19 +20,19 @@
     position: relative;
 }
 
-.index-category-box:nth-child(2) {
+.index-category-box1 {
     background-image: url(img/kat/uniform.jpg);
 }
 
-.index-category-box:nth-child(3) {
+.index-category-box2 {
     background-image: url(img/kat/hb.jpg);
 }
 
-.index-category-box:nth-child(4) {
+.index-category-box3 {
     background-image: url(img/kat/felj.jpg);
 }
 
-.index-category-box:nth-child(5) {
+.index-category-box4 {
     background-image: url(img/kat/zsb.jpg);
 }
 
